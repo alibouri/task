@@ -13,7 +13,6 @@ import com.damelit.model.Task;
 
 public interface TaskDAO extends JpaRepository<Task,Integer> {
 
-	//Task save(Task task);
 
 	@Query("select t from Task t")
 	List<Task> list();
